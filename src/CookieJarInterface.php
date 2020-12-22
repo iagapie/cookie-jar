@@ -29,7 +29,7 @@ interface CookieJarInterface
     public function has(string $name, ?string $path = null): bool;
 
     /**
-     * @param array ...$parameters
+     * @param Cookie|mixed ...$parameters
      */
     public function add(...$parameters): void;
 
