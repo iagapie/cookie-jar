@@ -1,0 +1,36 @@
+{
+    "name": "iagapie/cookie-jar",
+    "type": "library",
+    "description": "PHP CookieJar Bag",
+    "keywords": [
+        "cookie",
+        "cookie-middleware",
+        "cookie-jar"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Igor Agapie",
+            "email": "igoragapie@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">= 8.0",
+        "symfony/http-foundation": "^5.2"
+    },
+    "require-dev": {
+        "psr/http-server-middleware": "^1.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "IA\\Cookie\\": "src/"
+        }
+    }
+}
